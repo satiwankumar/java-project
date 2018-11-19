@@ -1,0 +1,19 @@
+package DATA;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		llist n =new llist();
+		n.Insert_begining(50);
+		n.Insert_begining(30);
+		n.Insert_begining(15);
+		n.Insert_begining(18);
+		n.Insert_End(50);
+		n.Insert_Middle(15, 30);
+		n.display();
+
+	}
+
+}

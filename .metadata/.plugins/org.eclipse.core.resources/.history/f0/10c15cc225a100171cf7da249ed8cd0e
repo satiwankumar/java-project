@@ -1,0 +1,84 @@
+package Assignment;
+
+class Fan{
+public static final int slow=1;
+public static final int medium=2;
+public static final int fast=3;
+
+int speed ;
+boolean status;
+double radius;
+String color ;
+
+public Fan(){
+this.speed=slow;
+this.status=false;
+this.radius=5.0;
+this.color="blue";
+}
+
+
+public Fan(int speed,boolean status,	double radius,String color ){
+this.speed=speed;
+this.status=status;
+this.radius=radius;
+this.color=color;
+}
+
+
+
+public void  setSpeed(){
+	this.speed=speed;;
+}
+public int getSpeed(){
+	return speed;
+}
+
+public void  setstatus(){
+	this.status=status;;
+}
+
+public boolean getstatus(){
+	return status;
+}
+
+public void  setradius(){
+	this.radius=radius;
+}
+
+public double  getradius(){
+	return radius;
+}
+public void setcolor(){
+	this.color=color;
+}
+
+public String  getcolor(){
+	return color;
+}
+@Override
+public String toString() {
+	return "fan [ speed=" + speed + ", status=" + status
+			+ ", radius=" + radius + ", color=" + color + "]";
+}
+
+
+
+
+}
+
+public class Main {
+	
+public static void main(String[]args){
+			
+Fan fan1=new Fan();
+System.out.println(fan1);
+Fan fan2 = new Fan(Fan.medium,true,10.0,"red");
+
+System.out.println(fan2);
+
+
+
+	
+	}
+}

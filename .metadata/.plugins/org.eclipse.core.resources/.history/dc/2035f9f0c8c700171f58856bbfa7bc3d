@@ -1,0 +1,44 @@
+package practice;
+
+public class StacksPractice {
+	
+	int top;
+	int size;
+	
+	int a [] = new int[5];
+	
+	public StacksPractice(){
+		top=-1;
+		size=a.length;
+	}
+	
+	
+	public void push(int d){
+		if(top<0){
+			System.out.println("stack is full");
+		}
+		else
+		{
+			top++;
+			a[top]=d;
+			
+		}
+	}
+	
+	public void display(){
+		for(int i=top;i<=size;i++)
+		System.out.println(a[top]);
+		
+	}
+
+}
+class Main{
+	public static void main(String [] args){
+	StacksPractice k = new StacksPractice(); 
+	k.push(25);
+	k.display();
+		
+	}
+	
+	
+}

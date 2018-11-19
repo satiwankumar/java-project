@@ -1,0 +1,16 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			queues b = new queues();
+			b.Enqueue(55);
+			b.Enqueue(65);
+			b.Enqueue(75);
+			b.display();
+			System.out.println("\n****************");
+			b.Dequeue();
+			b.display();
+	}
+
+}

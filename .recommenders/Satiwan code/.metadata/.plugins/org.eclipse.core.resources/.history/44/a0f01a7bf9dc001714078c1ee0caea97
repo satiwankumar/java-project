@@ -1,0 +1,13 @@
+package ali;
+
+public class cycle {
+	int weight;
+	
+	
+	public void info(){
+		
+		System.out.println("super classs merthod " + weight);
+	}
+	
+
+}

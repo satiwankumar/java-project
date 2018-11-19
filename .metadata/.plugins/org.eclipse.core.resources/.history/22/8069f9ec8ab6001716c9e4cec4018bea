@@ -1,0 +1,14 @@
+package llist;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		llist o= new llist();
+		o.insertfront(55);
+
+	}
+
+}

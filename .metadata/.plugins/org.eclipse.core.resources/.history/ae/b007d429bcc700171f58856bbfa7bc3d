@@ -1,0 +1,17 @@
+package practice;
+
+	public class Main {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			
+			
+			llist o= new llist();
+			o.insert_front(55);
+			o.insert_front(65);
+			
+			o.display();
+
+		}
+
+}

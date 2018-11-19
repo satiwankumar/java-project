@@ -1,0 +1,13 @@
+package ali;
+
+public class Bicycle extends cycle{
+	
+	String brand;
+	
+	//overriding 
+	public  void info(){
+		System.out.println("subclass method "+weight);
+	}
+	
+
+}

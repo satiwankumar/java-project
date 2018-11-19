@@ -1,0 +1,28 @@
+package Arrays;
+import java.util.*;
+
+public class insertarray {
+//wait
+	public static void main(String[] args)
+	{
+		Scanner input= new Scanner(System.in);
+	int[]  p=new int[5];
+	p[0]=2;
+	p[1]=6;
+	p[2]=3;
+	p[3]=4;
+	//ab suppose we insert value at 2nd index. means p[1]
+	int d=input.nextInt();
+	for(int i=0;i<4;i++)
+	{
+		p[i+1]=i;
+	}
+	p[1]=d;
+	for(int i=0;i<5;i++)
+	{
+		System.out.println(p[i]);
+	}
+	
+	
+}
+}

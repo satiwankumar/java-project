@@ -1,0 +1,28 @@
+package satiwan;
+
+import java.io.*;
+
+import java.util.Scanner;
+
+public class satiwan {
+	static String filename;
+
+	public static void main(String[] args) {
+		System.out.println("Enter you file path/name");
+		Scanner input = new Scanner(System.in);
+		filename = input.nextLine();
+		String line = null;
+
+		try {
+			FileReader fr = new FileReader(filename);
+			BufferedReader br = new BufferedReader(fr);
+			while ((line = br.readLine()) != null) {
+				System.out.println(line);
+			}
+
+		} catch (IOException e) {
+			System.out.println("file " + filename + "not found");
+
+		}
+	}
+}

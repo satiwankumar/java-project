@@ -1,0 +1,13 @@
+package practice;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		llist list= new llist();
+		list.insert(55);
+		list.d
+	}
+
+}

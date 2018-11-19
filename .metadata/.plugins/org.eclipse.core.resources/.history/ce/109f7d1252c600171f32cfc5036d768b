@@ -1,0 +1,84 @@
+package Project1;
+
+import java.util.*;
+public class Account {
+
+
+	private double balance = 100;
+	private double Accountno;
+	private double amount ,num ,i;
+Scanner input=new Scanner(System.in);
+	
+//constructor
+public Account(double Accountno){
+		this.Accountno=Accountno;
+		
+		
+	}
+
+public Account(double Accountno,double balance){
+	this.Accountno=Accountno;
+	
+	if(balance>=100){
+	this.balance=balance;
+	}
+	else{
+		balance=100;
+	}
+}
+
+
+public double getaccount(){
+	return Accountno;
+	
+}
+
+
+
+
+
+	public void withdraw(){
+		System.out.println("Enter the accountnumber");
+		  num=input.nextDouble();
+		for(i=0;i<5;i++){
+		if(num==Accountno){
+		System.out.println("Enter amount to Withdraw : ");
+		double amount =input.nextDouble();
+		balance=balance-amount;
+		}
+		else{
+			System.out.println("Invalid Account #");
+			}
+		}
+		}
+	
+	
+	public void  deposit(double amount){
+		System.out.println("Depsoit \n Enter the Amount  : ");
+		amount =input.nextDouble();
+		if(amount>0){
+		balance=balance+amount;
+		}
+		else{
+			do{
+			System.out.println("Invalid Input");
+			System.out.println("Enter amount again");
+		
+			}while(amount<=0);}
+		
+	}
+
+	
+	
+	public double checkBalance(){
+		return balance;
+		
+	}
+
+	
+	
+}
+
+
+
+

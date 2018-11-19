@@ -1,0 +1,19 @@
+package satiwan;
+import java.io.*;
+
+import java.util.Scanner;
+
+public class satiwan {
+	static String filename;
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	filename=input.nextLine();
+	try{
+	FileReader fr = new FileReader(filename);
+	BufferedReader br = new BufferedReader(fr);
+	}catch(IOException e){
+		System.out.println("file "+ filename+ "not found");
+		
+	}
+}
+}

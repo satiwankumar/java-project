@@ -1,0 +1,70 @@
+package Programs;
+
+public class Account {
+
+	String name;
+	double accountNo;
+	double amount;
+
+	public Account(String name, double accountNo, double amount) {
+
+		this.name = name;
+		this.accountNo = accountNo;
+		this.amount = amount;
+	}
+
+	void display() {
+		System.out.println(accountNo + " " + name + " " + amount);
+	}
+
+	public void withdraw(double accountNO, double amt) {
+
+		if (amount > amt) {
+			System.out.println(amt + "widrwan sucasssfully  ");
+		} else if (amount < amt) {
+			System.out.println("Insufficnet balance");
+
+		}
+
+	}
+
+	public void deposit(double accountNo, double amt) {
+
+		amount = amount + amt;
+
+	}
+
+	public double chkBalance(double acountNo) {
+		return amount;
+
+	}
+
+}
+
+class Main{
+	
+	
+public static void main(String[]args){
+	
+	Account cus1=new Account("Satiwan",1612294,20000);
+	
+	cus1.display();
+}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

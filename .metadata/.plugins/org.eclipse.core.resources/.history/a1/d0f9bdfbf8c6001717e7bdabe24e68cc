@@ -1,0 +1,60 @@
+package llist;
+
+public class llist {
+	Dnode header;
+	int size;
+
+	public llist() {
+
+		header = new Dnode();
+		size = 0;
+	}
+
+	public void insert_front(int d) {
+
+		Dnode n = new Dnode();	
+		Dnode ptr;
+		ptr=header.rlink;
+		n.llink=header;
+		n.rlink=ptr;
+		header.rlink=n;
+		n.data = d;
+
+	}
+
+
+	void insert_end(int d){
+		Dnode ptr= new Dnode();
+		ptr=header.rlink;
+		while(ptr.rlink!=null){
+			ptr=ptr.rlink;
+		}
+		Dnode n = new Dnode();
+		ptr.rlink=n;
+		n.llink=ptr;
+		n.data=d;
+		
+	}
+	void insert_middle(int d ,int k){
+		Dnode ptr  = new Dnode();
+		ptr=header.rlink;
+		while(ptr.rlink!=null && ptr.data!=k){
+			ptr=ptr.rlink;
+		}
+		
+		
+		
+	}
+	
+
+	public void display() {
+		Dnode ptr = new Dnode();
+		ptr = header;
+		while (ptr!= null) {
+			System.out.println(ptr.llink + " " + ptr.data + " " + ptr.rlink);
+			ptr = ptr.rlink;
+		}
+		size++;
+	}
+
+}

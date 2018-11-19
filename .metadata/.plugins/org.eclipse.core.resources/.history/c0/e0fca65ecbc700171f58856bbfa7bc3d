@@ -1,0 +1,51 @@
+package satiwan;
+
+
+public class StacksPractice {
+	
+	int top;
+	int size;
+	
+	int a [] = new int[5];
+	
+	public StacksPractice(){
+		top=-1;
+		size=a.length;
+	}
+	
+	
+	public void push(int d){
+		if(top>=size){
+			System.out.println("stack is full");
+		}
+		else
+		{
+			top++;
+			a[top]=d;
+			
+		}
+	
+	}
+	public void pop( ){
+		if(top==-1){
+			System.out.println("top is empty");
+		}
+		else{
+			top--;
+			
+		}
+		
+	}
+	
+	public void display(){
+		for(int i=0;i<=top;i++)
+		System.out.println("Element "+i+" is "+a[i]);
+		
+	}
+	
+
+}
+
+	
+
+

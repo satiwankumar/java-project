@@ -1,0 +1,32 @@
+package llist;
+
+public class llist {
+	Dnode header;
+	int size;
+public 	llist(){
+		
+	header = new Dnode();
+	size=0;
+	}
+
+void insertfront(){
+	Dnode ptr = new Dnode();
+	
+	Dnode ptr1= new Dnode();
+	ptr.rlink=header.rlink;
+	ptr1=ptr.rlink;
+	header.rlink=ptr;
+	ptr.llink=header;
+	ptr1.llink=ptr;
+}
+public void display(){
+	Dnode ptr = new Dnode();
+	ptr.rlink=header.rlink;
+	while(ptr.rlink!=null){
+		
+		ptr=ptr.rlink;
+	}
+	size++;
+}
+
+}

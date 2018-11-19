@@ -1,0 +1,33 @@
+package practice;
+
+public class llist {
+	
+	Node header;
+	
+	public llist(){
+		header =  new Node();
+		
+		
+	}
+
+	public void insert(int d){
+		Node  ptr = new Node();
+		ptr.link=header.link;
+		header.link=ptr;
+		ptr.link=header;
+		ptr.data=d;
+	}
+	public void display(){
+		Node ptr = new Node();
+		ptr= header.link;
+		while(ptr!=header){
+		System.out.println(ptr.data +""+ ptr.link);
+			ptr=ptr.link;
+		}
+		
+		
+	}
+	
+	
+	
+}
